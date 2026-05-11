@@ -2,6 +2,39 @@
 layout: default
 ---
 
+<style>
+  /* Reset default browser spacing */
+  body { margin: 0; padding-top: 60px; font-family: sans-serif; }
+
+  .navbar {
+    background-color: #333;
+    position: fixed; /* Keep it at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: center;
+  }
+
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  .navbar li a:hover {
+    background-color: #555;
+  }
+</style>
+
 <nav class="menu">
   <ul>
     <li><a href="#">Home</a></li>
