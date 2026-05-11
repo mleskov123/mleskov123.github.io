@@ -3,45 +3,45 @@ layout: default
 ---
 
 <style>
-  /* Reset default browser spacing */
-  body { margin: 0; padding-top: 60px; font-family: sans-serif; }
-
-  .navbar {
-    background-color: #333;
-    position: fixed; /* Keep it at the top */
+  /* The Navigation Bar */
+  .top-nav {
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it stays above other content */
-  }
-
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Align items horizontally */
-    justify-content: center;
-  }
-
-  .navbar li a {
-    display: block;
+    background-color: #159957; /* Matches Cayman green */
+    background-image: linear-gradient(120deg, #155799, #159957);
     color: white;
+    padding: 10px 0;
+    z-index: 9999;
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
 
-  .navbar li a:hover {
-    background-color: #555;
+  .top-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  .top-nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Prevent content from hiding behind the navbar */
+  body {
+    padding-top: 50px;
   }
 </style>
 
-<navbar class="menu">
+<nav class="menu">
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
-</navbar>
+</nav>
 <h1>
 Hello World
   Seeing if content changes
